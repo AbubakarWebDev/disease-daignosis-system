@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- title -->
+    <title>Medical Diagnosis System</title>
+
+    <!-- GOOGLE FONTS CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" type="text/css">
+</head>
+
+<style>
+    body {
+        font-family: "Poppins";
+    }
+
+    h1 {
+        font-family: "Roboto";
+
+    }
+
+    form label {
+        font-size: 20px !important;
+        font-weight: bolder;
+    }
+</style>
+
+<body>
+    <section class="container-md container-fluid">
+        <hr class="mt-4">
+        <h1 class='text-center font-weight-bolder'>Medical Diagnosis System By <span class="badge badge-secondary">Muhammad Abubakar</span></h1>
+        <hr>
+
+        <form>
+            <div class="form-group row">
+                <label for="symptoms" class="col-sm-2 col-form-label">Symptoms:</label>
+                <div class="col-sm-10">
+                    <select id="symptoms" placeholder="Select Your Symptoms" class='form-control' required>
+                        <option value="">Select Your Symptoms</option>
+                        <option value="tching">Tching</option>
+                        <option value="skin_rash">Skin Rash</option>
+                        <option value="nodal_skin_eruptions">Nodal Skin Eruptions</option>
+                        <option value="continuous_sneezing">Continuous Sneezing</option>
+                        <option value="shivering">Shivering</option>
+                        <option value="chills">Chills</option>
+                        <option value="joint_pain">Joint Pain</option>
+                        <option value="stomach_pain">Stomach pain</option>
+                        <option value="acidity">Acidity</option>
+                        <option value="ulcers_on_tongue">Ulcers On Tongue</option>
+                        <option value="muscle_wasting">Muscle Wasting</option>
+                        <option value="vomiting">Vomiting</option>
+                        <option value="burning_micturition">Burning Micturition</option>
+                        <option value="spotting_urination">Spotting Urination</option>
+                        <option value="fatigue">Fatigue</option>
+                    </select>
+                </div>
+            </div>
+            <button id="submitBtn" type="button" class="btn w-100 btn-primary font-weight-bolder">Dagnose Your Disease</button>
+        </form>
+        <div id="results"></div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
